@@ -26,4 +26,36 @@ public class Alien {
 		this.precioExtremidad = 0.1 * tamanio;
 		this.precioOjo = 0.05 * tamanio; 
 	}
+
+	public int getTamanio() {
+		return tamanio;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public int getNumeroOjos() {
+		return numeroOjos;
+	}
+
+	public int getNumeroBrazos() {
+		return numeroBrazos;
+	}
+
+	public int getNumeroPies() {
+		return numeroPies;
+	}
+
+	public double getPrecioExtremidad() {
+		return precioExtremidad;
+	}
+
+	public double getPrecioOjo() {
+		return precioOjo;
+	}
+
+	public double getPrecioCuerpo() {
+		return precioCuerpo;
+	}	
 }
