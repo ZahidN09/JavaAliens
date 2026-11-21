@@ -57,5 +57,17 @@ public class Alien {
 
 	public double getPrecioCuerpo() {
 		return precioCuerpo;
-	}	
+	}
+	
+	public void imprimir() {
+		System.out.println("********** CARACTERISTICAS DEL ALIEN **********");
+		System.out.println("Tamaño: " + this.tamanio);
+		System.out.println("Color: " + this.color);
+		System.out.println("Número de Ojos: " + this.numeroOjos);
+		System.out.println("Número de Brazos: " + this.numeroBrazos);
+		System.out.println("Núemro de Pies: " + this.numeroPies);
+		System.out.println("Precio de Extremidad: " + this.precioExtremidad);
+		System.out.println("Precio de  Ojo: " + this.precioOjo);
+		System.out.println("Precio de Cuerpo: " + this.precioCuerpo);
+	}
 }
