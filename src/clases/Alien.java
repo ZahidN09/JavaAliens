@@ -13,11 +13,10 @@ public class Alien {
 
 	public Alien(int tamanio, String color) {
 		if(tamanio<5 || tamanio>30) {
-			this.tamanio = 18;
-		}else {
-			this.tamanio = tamanio;
+			tamanio = 18;
 		}
 		
+		this.tamanio = tamanio;
 		this.color = color;
 		this.numeroOjos = 0;
 		this.numeroBrazos = 0;
