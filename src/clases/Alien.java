@@ -11,4 +11,19 @@ public class Alien {
 	private double precioOjo;
 	private double precioCuerpo;
 
+	public Alien(int tamanio, String color) {
+		if(tamanio<5 || tamanio>30) {
+			this.tamanio = 18;
+		}else {
+			this.tamanio = tamanio;
+		}
+		
+		this.color = color;
+		this.numeroOjos = 0;
+		this.numeroBrazos = 0;
+		this.numeroPies = 0;
+		this.precioCuerpo = 0.2*tamanio;
+		this.precioExtremidad = 0.1 * tamanio;
+		this.precioOjo = 0.05 * tamanio; 
+	}
 }
