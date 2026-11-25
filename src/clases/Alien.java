@@ -76,4 +76,11 @@ public class Alien {
 		this.numeroBrazos += brazos;
 		return true;
 	}
+	
+	public boolean agregarPiernas(int piernas) {
+		if (piernas + this.numeroBrazos + this.numeroPies > 10 || piernas < 0)
+			return false;
+		this.numeroPies += piernas;
+		return true;
+	}
 }
