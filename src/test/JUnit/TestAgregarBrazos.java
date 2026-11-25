@@ -18,6 +18,7 @@ public class TestAgregarBrazos {
 
 		assertTrue(resultado);
 		assertEquals(a1.getNumeroBrazos(), 5 );
+		assertEquals(12.6, a1.getPrecioTotal(), 0.001);
 	}
 
 
@@ -29,6 +30,7 @@ public class TestAgregarBrazos {
 
 		assertFalse(resultado);
 		assertEquals(a1.getNumeroBrazos(), 0 );
+		assertEquals(0.0, a1.getPrecioTotal(), 0.001);
 	}
 	
 	@Test
@@ -39,6 +41,7 @@ public class TestAgregarBrazos {
 
 		assertFalse(resultado);
 		assertEquals(a1.getNumeroBrazos(), 0 );
+		assertEquals(0.0, a1.getPrecioTotal(), 0.001);
 	}
 	
 	@Test
@@ -50,6 +53,7 @@ public class TestAgregarBrazos {
 
 		assertTrue(resultado);
 		assertEquals(a1.getNumeroBrazos(), 5 );
+		assertEquals(21.6, a1.getPrecioTotal(), 0.001);
 	}
 	
 	@Test
@@ -61,6 +65,7 @@ public class TestAgregarBrazos {
 
 		assertFalse(resultado);
 		assertEquals(a1.getNumeroBrazos(), 0);
+		assertEquals(12.6, a1.getPrecioTotal(), 0.001);
 	}
 
 }

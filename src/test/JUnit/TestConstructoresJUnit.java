@@ -16,6 +16,7 @@ public class TestConstructoresJUnit {
         assertEquals(0, alien.getNumeroOjos(), 0.0001);
         assertEquals(0, alien.getNumeroBrazos(), 0.0001);
         assertEquals(0, alien.getNumeroPies(), 0.0001);
+        assertEquals(0, alien.getPrecioTotal(), 0.0001);
     }
 
     @Test
