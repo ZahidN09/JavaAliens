@@ -74,6 +74,7 @@ public class Alien {
 		System.out.println("Precio de Extremidad: " + this.precioExtremidad);
 		System.out.println("Precio de  Ojo: " + this.precioOjo);
 		System.out.println("Precio de Cuerpo: " + this.precioCuerpo);
+		System.out.println("Precio de Total: " + this.precioTotal);
 	}
 
 	public boolean agregarBrazos(int brazos) {
