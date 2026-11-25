@@ -59,7 +59,7 @@ public class Alien {
 	public double getPrecioCuerpo() {
 		return precioCuerpo;
 	}
-	
+
 	public double getPrecioTotal() {
 		return precioTotal;
 	}
@@ -103,5 +103,10 @@ public class Alien {
 			return false;
 		}
 		return true;
+	}
+
+	public void calcularPrecioTotal() {
+		this.precioTotal = this.precioCuerpo + this.precioExtremidad * (this.numeroBrazos + this.numeroPies)
+				+ this.precioOjo * this.numeroOjos;
 	}
 }
