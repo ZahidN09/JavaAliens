@@ -76,11 +76,26 @@ public class Alien {
 		this.numeroBrazos += brazos;
 		return true;
 	}
-	
+
 	public boolean agregarPiernas(int piernas) {
 		if (piernas + this.numeroBrazos + this.numeroPies > 10 || piernas < 0)
 			return false;
 		this.numeroPies += piernas;
+		return true;
+	}
+
+	public boolean agregarOjos(int ojos) {
+		if (ojos < 0) {
+			return false;
+		} else if (this.tamanio >= 5 && this.tamanio <= 10 && ojos + this.numeroOjos <= 3) {
+			this.numeroOjos += ojos;
+		} else if (this.tamanio > 10 && this.tamanio <= 20 && ojos + this.numeroOjos <= 5) {
+			this.numeroOjos += ojos;
+		} else if (this.tamanio > 20 && this.tamanio <= 30 && ojos + this.numeroOjos <= 7) {
+			this.numeroOjos += ojos;
+		} else {
+			return false;
+		}
 		return true;
 	}
 }
