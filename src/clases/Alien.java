@@ -80,6 +80,7 @@ public class Alien {
 		if (brazos + this.numeroBrazos + this.numeroPies > 10 || brazos < 0)
 			return false;
 		this.numeroBrazos += brazos;
+		this.calcularPrecioTotal();
 		return true;
 	}
 
@@ -87,6 +88,7 @@ public class Alien {
 		if (piernas + this.numeroBrazos + this.numeroPies > 10 || piernas < 0)
 			return false;
 		this.numeroPies += piernas;
+		this.calcularPrecioTotal();
 		return true;
 	}
 
@@ -102,6 +104,7 @@ public class Alien {
 		} else {
 			return false;
 		}
+		this.calcularPrecioTotal();
 		return true;
 	}
 
