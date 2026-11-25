@@ -10,6 +10,7 @@ public class Alien {
 	private double precioExtremidad;
 	private double precioOjo;
 	private double precioCuerpo;
+	private double precioTotal;
 
 	public Alien(int tamanio, String color) {
 		if (tamanio < 5 || tamanio > 30) {
@@ -24,6 +25,7 @@ public class Alien {
 		this.precioCuerpo = 0.2 * tamanio;
 		this.precioExtremidad = 0.1 * tamanio;
 		this.precioOjo = 0.05 * tamanio;
+		this.precioTotal = 0;
 	}
 
 	public int getTamanio() {
@@ -56,6 +58,10 @@ public class Alien {
 
 	public double getPrecioCuerpo() {
 		return precioCuerpo;
+	}
+	
+	public double getPrecioTotal() {
+		return precioTotal;
 	}
 
 	public void imprimir() {
